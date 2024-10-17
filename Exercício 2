@@ -1,0 +1,11 @@
+const ordenarPorIdade = pessoas => pessoas.sort((a, b) => a.idade - b.idade);
+
+// Exemplo de uso:
+const pessoas = [
+    { nome: "Giovani", idade: 22 },
+    { nome: "Fred", idade: 29 },
+    { nome: "Lucas", idade: 19 },
+    { nome: "Dani", idade: 47 }
+];
+
+console.log(ordenarPorIdade(pessoas));
