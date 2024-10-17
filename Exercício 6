@@ -1,0 +1,5 @@
+const substituirElemento = (array, valorAntigo, novoValor) => 
+    array.map(item => item === valorAntigo ? novoValor : item);
+const array = [15, 6, 20, 6, 9];
+const resultado = substituirElemento(array, 6, 2);
+console.log(resultado);
