@@ -1,0 +1,5 @@
+const ehPalindromo = str => {
+    const normalizada = str.toLowerCase().replace(/[\W_]/g, '');
+    return normalizada === normalizada.split('').reverse().join('');
+};
+console.log(ehPalindromo("Socorram-me, subi no ônibus em Marrocos"));
