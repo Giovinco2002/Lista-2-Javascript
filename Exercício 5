@@ -1,0 +1,9 @@
+const somaMatriz = matriz => 
+    matriz.flat().reduce((soma, num) => soma + num, 0);
+const matriz = [
+    [2, 7, 6],
+    [12, 14],
+    [21, 7, 1, 4]
+];
+
+console.log(somaMatriz(matriz));
