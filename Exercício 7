@@ -1,0 +1,14 @@
+const multiplicarMatrizes = (matrizA, matrizB) => {
+    if (matrizA[0].length !== matrizB.length) {
+        throw new Error('O número de colunas da primeira matriz deve ser igual ao número de linhas da segunda.');
+    }
+    return matrizA.map(linhaA => 
+        Array.from({ length: matrizB[0].length }, (_, colunaB) => 
+            linhaA.reduce((soma, elementoA, g) => soma + elementoA * matrizB[g][colunaB], 0)
+        )
+    );
+};
+
+const matrizA = [[6, 12, 20], [2, 22, 3]];
+const matrizB = [[8, 3], [45, 17], [19, 67]];
+console.log(multiplicarMatrizes(matrizA, matrizB));
